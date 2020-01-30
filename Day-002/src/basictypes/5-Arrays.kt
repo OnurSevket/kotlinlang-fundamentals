@@ -8,9 +8,9 @@ fun main() {
     firstCharOfCountrys.set(0, 'T')
 
 
-    val squareArray = Array<Int>(5) {
-        it * it
+    val squareArray = Array<Unit>(5) {
+        println(it * it)
     }
 
-    println(squareArray[0].toString() + "--" + squareArray[1].toString()+ "--" +squareArray.toString())
+    println(squareArray[0].toString() + "--" + squareArray[1].toString() + "--" + squareArray.toString())
 }
