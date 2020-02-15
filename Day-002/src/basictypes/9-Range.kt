@@ -34,13 +34,22 @@ fun main() {
 
     reversed2.forEach() { print(" " + it) }
 
-    val numberList: IntRange = 10..100
+    println()
+
+    val numberList: IntRange = 10 until 100
     numberList.first
     numberList.last
     numberList.step
 
-    numberList.count {
+    numberList.forEach() { print(" " + it) }
+
+    println()
+
+    val countBigerThan50 = numberList.count {
         it > 50
     }
+
+    println()
+    println(countBigerThan50)
 
 }
